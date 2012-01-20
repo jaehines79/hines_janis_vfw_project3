@@ -1,0 +1,59 @@
+	<!-- Janis Hines -->
+	<!-- VFW 1201 -->
+	<!-- Important Date Tracker -->
+	<!-- Add Item Page -->
+
+<!DOCTYPE html>
+<html>
+	<head>  
+		<meta charset="utf-8" />
+		<meta name="description" content="Important Date Tracker" />
+		<meta name="keywords" content="birthdays, holidays, dates, event, events, meetings" />
+		<meta name="robots" content="index, follow" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<meta name="viewport" content="target-densitydpi=device-dpi" />
+		<meta name="HandHeldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<title>Important Date Tracker</title>
+        <link rel="stylesheet" href="styles.css" type="text/css" >
+	</head>
+	<body>  
+            <header><h1>Event Tracker</h1></header>
+           <nav>
+    			<a href="additem.html" id="addItem" style="display:none;"><h4>Add New Event</h4></a> 
+    		</nav>
+        <form action="#" method="post" id="event">   
+            <fieldset>  
+                <legend>Add an Event</legend>
+                <ul id="oftenErrors"></ul>
+                    	<ul><label for="events">*Event Name:</label><br><input type="text" class="entry" id="events" /></ul>
+                    	<ul id="select"><label for="recurrence">*Event Recurrence:<br></label></ul>
+                    	<ul><label for="often">*Number of Recurrences:</label><br><input type="text" class="entry" id="often" pattern="([0-9]*)" /></ul>
+                    	<ul><label for="info">Additional Info:</label><br><input type="text" class="entry" id="info" /></ul>
+                <span><h5>* Required Field</h5></span>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Event Details</legend>
+                <ul id="detailErrors"></ul>
+                    <ul><label for="location">Location of Event:</label><br><input type="text" class="entry" id="location" /></ul>
+                    	<ul>Is the Event for:</ul>
+                        	<ul><input type="radio" class="entry" checked value="family" id="family" name="relevance" /><label for="family">Family</label></ul>
+                        	<ul><input type="radio" class="entry" value="friend" id="friend" name="relevance" /><label for="friend">Friend</label></ul>
+                        	<ul><input type="radio" class="entry" value="other" id="other" name="relevance" /><label for="other">Other</label></ul>
+                    <ul><label for="guest">Guests:</label><br><input type="text" class="entry" id="guest" placeholder ="0" /></ul>
+                    <ul><label for="importance">Event Importance <br> on a scale of 1-10:</label><br /><br><input type="range" class="slider" min="1" max="10.0" step="1" id="importance" /></ul>
+                    <ul><label for="date">Event Date:</label><br><input type="date" class="entry" id="date" placeholder="12-01-2011" /></ul>
+                	<ul><textarea id="notes" class="entry" />Additional Notes</textarea></ul>
+            </fieldset>
+            <fieldset>
+                <div class = "center">
+                	<a href="#" id="view">View Events</a>
+                    <a href="additem.html" id="addItem" style="display:none;">Add Event</a><input type="submit" value="Save Event" id="submit" /> 
+                    <a href="#" id="clear">Clear Events</a>
+                </div>
+                </div>
+            </fieldset> 
+        </form>
+        <script type="text/javascript" src="main.js"></script>
+	</body>
+</html>

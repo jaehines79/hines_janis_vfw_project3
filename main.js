@@ -1,7 +1,7 @@
-//Activity 3
-//Visual Frameworks 1201
-//Janis Hines
-//January 17, 2012
+// Project 3 
+// Visual Frameworks 1201 
+// Janis Hines 
+// January 17, 2012
 
 window.addEventListener("DOMContentLoaded", function(){
     

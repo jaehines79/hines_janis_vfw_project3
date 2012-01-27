@@ -13,7 +13,7 @@ var json = {
     	"info" : ["Additional Info: ", "None"],
     	"location": ["Location of Event: ", "Home"],
     	"relevance": ["The Event is for: ", "Family"],
-    	"guest": ["Guests: ", "3" ],
+    	"guest": ["Guests: ", "003" ],
     	"importance": ["Event Importance: ", "8"],
     	"date": ["Date of Event: ", "11/11/2012"],
     	"notes": ["Notes: ", "Don't forget a gift!"]
@@ -25,7 +25,7 @@ var json = {
     	"info" : ["Additional Info: ", "Casual Dress"],
     	"location": ["Location of Event: ", "Office"],
     	"relevance": ["The Event is for: ", "Other"],
-    	"guest": ["Guests: ", "10" ],
+    	"guest": ["Guests: ", "010" ],
     	"importance": ["Event Importance: ", "6"],
     	"date": ["Date of Event: ", "01/31/2012"],
     	"notes": ["Notes: ", "Don't forget drinks!"]
@@ -37,7 +37,7 @@ var json = {
     	"info" : ["Additional Info: ", "Bring a guest"],
     	"location": ["Location of Event: ", "Friend's home"],
     	"relevance": ["The Event is for: ", "Friend"],
-    	"guest": ["Guests: ", "1" ],
+    	"guest": ["Guests: ", "001" ],
     	"importance": ["Event Importance: ", "10"],
     	"date": ["Date of Event: ", "08/09/2012"],
     	"notes": ["Notes: ", "Formal attire"]

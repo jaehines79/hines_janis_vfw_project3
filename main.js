@@ -1,7 +1,7 @@
 // Project 3 
 // Visual Frameworks 1201 
 // Janis Hines 
-// January 17, 2012
+// January 20, 2012
 
 window.addEventListener("DOMContentLoaded", function(){
     
@@ -81,7 +81,8 @@ window.addEventListener("DOMContentLoaded", function(){
     }
     function getData(){
         if(localStorage.length == 0){
-            alert("No Events Found");
+            alert("No Events Found, default data was added.");
+            autoFillData();
         }
         toggleView("on");
         var makeDiv = document.createElement('div');
@@ -96,19 +97,36 @@ window.addEventListener("DOMContentLoaded", function(){
             	makeList.appendChild(makeli);
             var key = localStorage.key(i);
             var value = localStorage.getItem(key);
-            var formData = JSON.parse(value);
-            var subList = document.createElement('ul');
-            	makeli.appendChild(subList);
-            for(var n in formData){
-                var makeSub = document.createElement('li');
-                subList.appendChild(makeSub);
-                var subText = formData[n][0]+ " " +formData[n][1];
-                makeSub.innerHTML = subText;
-                subList.appendChild(linksli);
+            var obj = JSON.parse(value);
+            var makeSubList = document.createElement('ul');
+            makeli.appendChild(makeSubList);
+            getImage(obj.recurrence[1], makeSubList);
+            for(var n in obj){
+                var makeSubli = document.createElement('li');
+                makeSubList.appendChild(makeSubli);
+                var optSubText = obj[n][0]+ " " +obj[n][1];
+                makeSubli.innerHTML = optSubText;
+                makeSubList.appendChild(linksli);
             }
             makeItemLinks(localStorage.key(i), linksli);
         }
     }
+
+    function getImage(catName, makeSubList){
+    	var imageli = document.createElement('li');
+    	makeSubList.appendChild(imageli);
+    	var newImg = document.createElement('img');
+    	var setSrc = newImg.setAttribute("src", "images/" + catName + ".png");
+    	imageli.appendChild(newImg);
+    }
+    
+    //Auto populate Local Storage
+    function autoFillData(){
+    	for(var n in json){
+    		var id = Math.floor(Math.random()*10000001);
+    		localStorage.setItem(id, JSON.stringify(json[n]));
+	    }
+	}
 
     function makeItemLinks(key, linksli){
         var editLink = document.createElement('a');
@@ -144,13 +162,13 @@ window.addEventListener("DOMContentLoaded", function(){
         $('location').value = object.location[1];
         var radiobox = document.forms[0].relevance;
         for (var i=0; i<radiobox.length; i++){
-            if(radiobox[i].value == "Family" && object.relevance[1] == "Family"){
+            if(radiobox[i].value == "family" && object.relevance[1] == "family"){
             radiobox[i].setAttribute("checked", "checked");
             }
-            else if(radiobox[i].value == "Friend" && object.relevance[1] == "Friend"){
+            else if(radiobox[i].value == "friend" && object.relevance[1] == "friend"){
             radiobox[i].setAttribute("checked", "checked");
             }
-            else if(radiobox[i].value == "Other" && object.relevance[1] == "Other"){
+            else if(radiobox[i].value == "other" && object.relevance[1] == "other"){
             radiobox[i].setAttribute("checked", "checked");
             }
         }
@@ -221,9 +239,9 @@ window.addEventListener("DOMContentLoaded", function(){
             	oftenArray.push(oftenError);
         	}
             var detailArray = [];
-            var re = /^[0-9]$/;
-        		if((!(re.exec(guestNumber.value))) || (guestNumber.value === "0")){
-            		var guestError = "Please enter a valid Guest number";
+            var re = /^[0-9]{3}$/;
+        		if((!(re.exec(guestNumber.value))) || (guestNumber.value === "000")){
+            		var guestError = "Please enter a valid 3 digit Guest number ex. 003";
             		guestNumber.style.border = "1px solid red";
            			detailArray.push(guestError);
         		}
@@ -256,7 +274,7 @@ window.addEventListener("DOMContentLoaded", function(){
             return false;
         }
     }               
-    var recurrenceNumber = ["--Event Recurrence--", "Every Week", "Every Month", "Every Year", "Non-recurring"],
+    var recurrenceNumber = ["--Event Recurrence--", "Weekly", "Monthly", "Yearly", "Once"],
     radioValue,
     oftenErr = $('oftenErrors'),
     detailErr = $('detailErrors');

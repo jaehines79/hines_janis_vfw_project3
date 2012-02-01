@@ -1,11 +1,8 @@
- Project 4
- Visual Frameworks 1201
- Janis Hines
- January 20, 2012
+ Week 1 
+ MiU 1202 
+ Janis Jae Hines 
+ January 31, 2012 
 
 
 GitHub links
 
-https://github.com/jaehines79/hines_janis_vfw_project3
-
-https://github.com/jaehines79

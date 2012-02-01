@@ -1,4 +1,4 @@
-// Project 3 
+// Project 4 
 // Visual Frameworks 1201 
 // Janis Hines 
 // January 20, 2012

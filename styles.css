@@ -33,7 +33,14 @@ h4 {
 	padding: 10px;
 	background: #5E5E82;
 }
-
+h3{
+    color: #FFFFFF;
+	font-family: Georgia, serif;
+	margin: 10px 20px;
+	border: 2px solid #FFFFFF;
+	padding: 10px;
+	background: #5E5E82;
+}
 legend {
     color: #4B327D;
 }
@@ -45,11 +52,17 @@ input {
     background: white;
     cursor: pointer;
 }
-
-ul{
-	color: #4B327D;
+ol{color: #FFFFFF;
+	font-family: Georgia, serif;
+	margin: 5px 20px;
+	border: 2px solid #FFFFFF;
+	padding: 10px;
+	background: #5E5E82;
 }
 li{
+	color: #4B327D;
+}
+ul{
 	color: #4B327D;
 }
 nav{

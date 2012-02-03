@@ -41,7 +41,7 @@ var json = {
     	"importance": ["Event Importance: ", "10"],
     	"date": ["Date of Event: ", "08/09/2012"],
     	"notes": ["Notes: ", "Formal attire"]
-    }
+    },
     "event4": {
     	"events": ["Event: ", "Daniel's Birthday Party"],
 		"recurrence": ["Recurrence: ", "Yearly"],
@@ -53,7 +53,7 @@ var json = {
     	"importance": ["Event Importance: ", "10"],
     	"date": ["Date of Event: ", "11/11/2012"],
     	"notes": ["Notes: ", "None"]
-    }
+    },
     "event5": {
     	"events": ["Event: ", "School Party"],
 		"recurrence": ["Recurrence: ", "Once"],
@@ -65,7 +65,7 @@ var json = {
     	"importance": ["Event Importance: ", "10"],
     	"date": ["Date of Event: ", "02/14/2012"],
     	"notes": ["Notes: ", "Bring Valentine's Day Gifts"]
-    }
+    },
     "event6": {
     	"events": ["Event: ", "Class"],
 		"recurrence": ["Recurrence: ", "Weekly"],
@@ -77,7 +77,7 @@ var json = {
     	"importance": ["Event Importance: ", "8"],
     	"date": ["Date of Event: ", "01/01/2012"],
     	"notes": ["Notes: ", "None"]
-    }
+    },
     "event7": {
     	"events": ["Event: ", "Date Night"],
 		"recurrence": ["Recurrence: ", "Once"],
@@ -89,7 +89,7 @@ var json = {
     	"importance": ["Event Importance: ", "10"],
     	"date": ["Date of Event: ", "01/06/2012"],
     	"notes": ["Notes: ", "Dress Nice"]
-    }
+    },
     "event8": {
     	"events": ["Event: ", "Parent's Anniversary Party"],
 		"recurrence": ["Recurrence: ", "Yearly"],
@@ -101,7 +101,7 @@ var json = {
     	"importance": ["Event Importance: ", "10"],
     	"date": ["Date of Event: ", "02/27/2012"],
     	"notes": ["Notes: ", "N/A"]
-    }
+    },
     "event9": {
     	"events": ["Event: ", "Co-worker's Party"],
 		"recurrence": ["Recurrence: ", "Once"],
@@ -113,7 +113,7 @@ var json = {
     	"importance": ["Event Importance: ", "7"],
     	"date": ["Date of Event: ", "12/12/2012"],
     	"notes": ["Notes: ", "Bring a candle"]
-    }
+    },
      "event10": {
     	"events": ["Event: ", "Bar Mitzvah"],
 		"recurrence": ["Recurrence: ", "Once"],
@@ -125,7 +125,7 @@ var json = {
     	"importance": ["Event Importance: ", "7"],
     	"date": ["Date of Event: ", "05/30/2012"],
     	"notes": ["Notes: ", "Bring a gift"]
-    }
+    },
      "event11": {
     	"events": ["Event: ", "Ashley's Graduation"],
 		"recurrence": ["Recurrence: ", "Once"],
@@ -137,7 +137,7 @@ var json = {
     	"importance": ["Event Importance: ", "10"],
     	"date": ["Date of Event: ", "04/14/2014"],
     	"notes": ["Notes: ", "Bring a card"]
-    }
+    },
      "event12": {
     	"events": ["Event: ", "Tracy's Big 40 Party"],
 		"recurrence": ["Recurrence: ", "Once"],
@@ -149,7 +149,7 @@ var json = {
     	"importance": ["Event Importance: ", "9"],
     	"date": ["Date of Event: ", "01/30/2012"],
     	"notes": ["Notes: ", "Bring a fire extinguisher!"]
-    }
+    },
      "event13": {
     	"events": ["Event: ", "Scavenger Hunt"],
 		"recurrence": ["Recurrence: ", "Once"],
@@ -161,7 +161,7 @@ var json = {
     	"importance": ["Event Importance: ", "7"],
     	"date": ["Date of Event: ", "04/20/2012"],
     	"notes": ["Notes: ", "None"]
-    }
+    },
      "event14": {
     	"events": ["Event: ", "Moving Party"],
 		"recurrence": ["Recurrence: ", "Once"],
@@ -173,7 +173,7 @@ var json = {
     	"importance": ["Event Importance: ", "5"],
     	"date": ["Date of Event: ", "03/24/2012"],
     	"notes": ["Notes: ", "N/A"]
-    }
+    },
      "event15": {
     	"events": ["Event: ", "Welcome Home Party"],
 		"recurrence": ["Recurrence: ", "Once"],
@@ -185,7 +185,7 @@ var json = {
     	"importance": ["Event Importance: ", "8"],
     	"date": ["Date of Event: ", "10/4/2014"],
     	"notes": ["Notes: ", "Bring a gift"]
-    }
+    },
      "event16": {
     	"events": ["Event: ", "Seminar"],
 		"recurrence": ["Recurrence: ", "Weekly"],
@@ -197,7 +197,7 @@ var json = {
     	"importance": ["Event Importance: ", "10"],
     	"date": ["Date of Event: ", "2/9/2012"],
     	"notes": ["Notes: ", "N/A"]
-    }
+    },
      "event17": {
     	"events": ["Event: ", "Shakira Concert"],
 		"recurrence": ["Recurrence: ", "Once"],
@@ -209,7 +209,7 @@ var json = {
     	"importance": ["Event Importance: ", "10"],
     	"date": ["Date of Event: ", "6/21/2012"],
     	"notes": ["Notes: ", "None"]
-    }
+    },
      "even18": {
     	"events": ["Event: ", "Fundraiser"],
 		"recurrence": ["Recurrence: ", "Monthly"],
@@ -221,7 +221,7 @@ var json = {
     	"importance": ["Event Importance: ", "9"],
     	"date": ["Date of Event: ", "3/8/2012"],
     	"notes": ["Notes: ", "Bring donation"]
-    }
+    },
      "event19": {
     	"events": ["Event: ", "Royal Ball"],
 		"recurrence": ["Recurrence: ", "Once"],
@@ -233,7 +233,7 @@ var json = {
     	"importance": ["Event Importance: ", "10"],
     	"date": ["Date of Event: ", "8/8/2012"],
     	"notes": ["Notes: ", "None"]
-    }
+    },
      "event20": {
     	"events": ["Event: ", "Launch Party"],
 		"recurrence": ["Recurrence: ", "Once"],
